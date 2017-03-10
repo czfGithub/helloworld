@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_takephoto"
+        android:layout_width="128dp"
+        android:layout_height="102dp"
+        android:background="#E8E8E8"
+        android:visibility="gone"
+        android:gravity="center">
+        
+        <ImageView 
+            android:id="@+id/iv_takephoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/release_dynamic_takephoto_icon_pressed" />
+        
+        <TextView 
+            android:layout_below="@id/iv_takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="拍照图片"
+            android:textColor="#ffffff"/>
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_image_grid_text"
+        android:layout_width="128dp"
+        android:layout_height="102dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="128dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop"
+         >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/isselected"
+        android:layout_margin="3dp"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
